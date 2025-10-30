@@ -10,3 +10,8 @@ Use the following order:
 - 003_configure.R (Select variables to run a Random Forest regression, Evaluate and create the following map:)
 
 <img width="1179" height="879" alt="image" src="https://github.com/user-attachments/assets/dd65f7f6-cf90-48fd-8267-a8ebbc7295e8" />
+
+Please use this citation when use this R code:
+
+Sosa, C.C.; Arenas, C.; García-Merchán, V.H. Human Population Density Influences Genetic Diversity of Two Rattus Species Worldwide: A Macrogenetic Approach. Genes 2023, 14, 1442. https://doi.org/10.3390/genes14071442
+
