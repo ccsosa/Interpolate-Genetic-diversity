@@ -18,6 +18,8 @@ Use the following order:
 ## Gini scores:
 <img width="1920" height="992" alt="image" src="https://github.com/user-attachments/assets/9af9e72a-5390-4e33-ab03-bd582dd6f4ef" />
 
+
+# Citation
 Please use this citation when use this R code:
 
 Sosa, C.C.; Arenas, C.; García-Merchán, V.H. Human Population Density Influences Genetic Diversity of Two Rattus Species Worldwide: A Macrogenetic Approach. Genes 2023, 14, 1442. https://doi.org/10.3390/genes14071442
