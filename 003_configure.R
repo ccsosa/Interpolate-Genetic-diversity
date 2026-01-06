@@ -4,7 +4,7 @@ library(doParallel);require(tmaptools)
 library(sf);library(terra);library(usdm)
 library(ggpmisc);library(ggplot2)
 library(tmap);library(RColorBrewer)
-
+library(bit)
 ################################################################################
 #loading bioclimatic data
 bios <- terra::rast("D:/PROGRAMAS/Dropbox/uniquindio_gen_ii/MATERIAL/PRACTICA8/spat_data.tif")
@@ -138,7 +138,7 @@ temp.dt$prediction <- NA
 #save.image(paste0("D:/DRYAD/RATTUS/",VAR,"_RN",".RData"))
 
 #predicting by chunks to ommit memory problems (chunks of 100 thousands records)
-x_chunks <- chunks(1,  nrow(temp.dt), by=100000) #200000
+x_chunks <- bit::chunks(1,  nrow(temp.dt), by=1000) #200000
 for(i in 1:length(x_chunks)){
   #i <- 1
   message(paste(round(i/length(x_chunks)*100,2)," %"))
