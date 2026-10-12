@@ -3,7 +3,7 @@ library(readxl)
 library(sf)
 library(terra)
 #define folder
-dir <- "D:/PROGRAMAS/Dropbox/uniquindio_gen_ii/MATERIAL/PRACTICA8"
+dir <- "D:/Interpolate-Genetic-diversity-main"
 
 #loading GenDivRange
 sp_df <- readxl::read_xlsx(paste0(dir,"/GenDivRange/","spec_tab_v2025-03-31.xlsx"))

@@ -1,4 +1,5 @@
 require(geodata)
+require(dplyr)
 require(factoextra);library(ranger);library(caret)
 library(doParallel);require(tmaptools)
 library(sf);library(terra);library(usdm)
@@ -7,9 +8,9 @@ library(tmap);library(RColorBrewer)
 library(bit)
 ################################################################################
 #loading bioclimatic data
-bios <- terra::rast("D:/PROGRAMAS/Dropbox/uniquindio_gen_ii/MATERIAL/PRACTICA8/spat_data.tif")
+bios <- terra::rast("D:/Interpolate-Genetic-diversity-main/PREDICT_GEN_DIVERSITY/spat_data.tif")
 #loading population data
-data <- read.csv("D:/PROGRAMAS/Dropbox/uniquindio_gen_ii/MATERIAL/PRACTICA8/pop_data.csv",header = T)
+data <- read.csv("D:/Interpolate-Genetic-diversity-main/pop_data.csv",header = T)
 ################################################################################
 #creating mask!
 mask <- bios[[1]]
@@ -183,4 +184,5 @@ Map3 <- tm_shape(sample_p2_cells3,
             legend.position = c("left","bottom"),
             legend.bg.color = "white", legend.bg.alpha=.2)#;gc()
 #saving
-tmap_save(filename=paste0("D:/PROGRAMAS/Dropbox/uniquindio_gen_ii/MATERIAL/PRACTICA8/","He_RR",".pdf"),tm=Map3,dpi=900,width =180,height=100,units = "cm");gc()
+Map3
+tmap_save(filename=paste0("D:/Interpolate-Genetic-diversity-main/","He_RR",".pdf"),tm=Map3,dpi=900,width =180,height=100,units = "cm");gc()
